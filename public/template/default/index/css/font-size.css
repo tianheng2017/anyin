@@ -1,0 +1,114 @@
+/*font-size*/
+.fnt_16 { font-size:16px;}
+.fnt_18 { font-size:18px;}
+.fnt_20 { font-size:20px;}
+.fnt_22 { font-size:22px;}
+.fnt_24 { font-size:24px;}
+.fnt_26 { font-size:26px;}
+.fnt_28 { font-size:28px;}
+.fnt_30 { font-size:30px;}
+.fnt_32 { font-size:32px;}
+.fnt_36 { font-size:36px;}
+.fnt_40 { font-size:40px;}
+.fnt_45 { font-size:45px;}
+.fnt_48 { font-size:48px;}
+.fnt_55 { font-size:55px;}
+.fnt_60 { font-size:60px;}
+.fnt_72 { font-size:72px;}
+.fnt_80 { font-size:80px;}
+.fnt_100 { font-size:100px;}
+@media only screen and (max-width: 1660px) {
+.fnt_20 { font-size:18px;}
+.fnt_22 { font-size:20px;}
+.fnt_24 { font-size:22px;}
+.fnt_26 { font-size:24px;}
+.fnt_28 { font-size:24px;}
+.fnt_30 { font-size:28px;}
+.fnt_32 { font-size:30px;}
+.fnt_36 { font-size:32px;}
+.fnt_40 { font-size:36px;}
+.fnt_45 { font-size:38px;}
+.fnt_48 { font-size:40px;}
+.fnt_60 { font-size:48px;}
+.fnt_55 { font-size:52px;}
+.fnt_72 { font-size:60px;}
+.fnt_80 { font-size:70px;}
+.fnt_100 { font-size:80px;}
+}
+@media only screen and (max-width: 1400px) {
+.fnt_18 { font-size:16px;}
+.fnt_22 { font-size:18px;}
+.fnt_24 { font-size:20px;}
+.fnt_26 { font-size:20px;}
+.fnt_28 { font-size:22px;}
+.fnt_30 { font-size:24px;}
+.fnt_32 { font-size:28px;}
+.fnt_36 { font-size:30px;}
+.fnt_40 { font-size:32px;}
+.fnt_45 { font-size:34px;}
+.fnt_48 { font-size:36px;}
+.fnt_55 { font-size:38px;}
+.fnt_60 { font-size:40px;}
+.fnt_72 { font-size:48px;}
+.fnt_80 { font-size:60px;}
+.fnt_100 { font-size:70px;}
+}
+@media only screen and (max-width: 1279px) {
+.fnt_24 { font-size:18px;}
+.fnt_26 { font-size:18px;}
+.fnt_28 { font-size:20px;}
+.fnt_30 { font-size:22px;}
+.fnt_32 { font-size:24px;}
+.fnt_36 { font-size:28px;}
+.fnt_40 { font-size:30px;}
+.fnt_45 { font-size:32px;}
+.fnt_48 { font-size:32px;}
+.fnt_55 { font-size:34px;}
+.fnt_60 { font-size:36px;}
+.fnt_72 { font-size:40px;}
+.fnt_80 { font-size:50px;}
+.fnt_100 { font-size:60px;}
+}
+@media only screen and (max-width: 1023px) {
+.fnt_16 { font-size:14px;}
+.fnt_18 { font-size:14px;}
+.fnt_20 { font-size:16px;}
+.fnt_22 { font-size:16px;}
+.fnt_24 { font-size:16px;}
+.fnt_28 { font-size:18px;}
+.fnt_30 { font-size:20px;}
+.fnt_32 { font-size:22px;}
+.fnt_36 { font-size:24px;}
+.fnt_40 { font-size:28px;}
+.fnt_45 { font-size:28px;}
+.fnt_48 { font-size:30px;}
+.fnt_55 { font-size:30px;}
+.fnt_60 { font-size:32px;}
+.fnt_72 { font-size:36px;}
+.fnt_80 { font-size:42px;}
+.fnt_100 { font-size:50px;}
+}
+@media only screen and (max-width: 767px) {
+.fnt_30 { font-size:18px;}
+.fnt_36 { font-size:20px;}
+.fnt_40 { font-size:24px;}
+.fnt_45 { font-size:26px;}
+.fnt_48 { font-size:28px;}
+.fnt_55 { font-size:30px;}
+.fnt_60 { font-size:30px;}
+.fnt_72 { font-size:32px;}
+.fnt_80 { font-size:36px;}
+.fnt_100 { font-size:40px;}
+}
+@media only screen and (max-width: 375px) {
+.fnt_36 { font-size:18px;}
+.fnt_40 { font-size:20px;}
+.fnt_45 { font-size:22px;}
+.fnt_48 { font-size:24px;}
+.fnt_55 { font-size:24px;}
+.fnt_60 { font-size:24px;}
+.fnt_72 { font-size:30px;}
+.fnt_80 { font-size:32px;}
+.fnt_100 { font-size:36px;}
+}
+

@@ -1,68 +1,92 @@
-
-	<!--Footer Widget Area Start--> 
-    <div class="footer-widget-area"> 
-     <div class="container"> 
-      <div class="row"> 
-       <div class="col-md-3 col-sm-4"> 
-        <div class="single-footer-widget"> 
-         <div class="footer-logo"> 
-          <a href="index.html"><img src="{$public}img/logo/footer.png" alt="" /></a> 
-         </div> 
-         <p>{$system.des}</p> 
-         <div class="social-icons"> 
-          <a href="tencent://message/?uin={$system.qq}&Site=SuperNic&Menu=yes"><i class="fa fa-qq"></i></a> 
-          <a href="https://gitee.com/ruoshuiyx/SYPHP"><i class="fa fa-git"></i></a> 
-          <a href="mailto:{$system.email}"><i class="zmdi zmdi-email"></i></a> 
-         </div> 
-        </div> 
-       </div> 
-       <div class="col-md-3 col-sm-4"> 
-        <div class="single-footer-widget"> 
-         <h3>联系我们</h3> 
-         <a href="tel:{$system.tel}"><i class="fa fa-phone"></i>{$system.tel}</a> 
-         <span><i class="fa fa-envelope"></i>{$system.email}</span> 
-         <span><i class="fa fa-globe"></i>{$system.url}</span> 
-         <span><i class="fa fa-map-marker"></i>{$system.address}</span> 
-        </div> 
-       </div> 
-       <div class="col-md-3 hidden-sm"> 
-        <div class="single-footer-widget"> 
-         <h3>友情链接</h3> 
-         <ul class="footer-list"> 
-          {tp:link name='link'}
-          <li><a target="_blank" href="{$link.url}">{$link.name}</a></li> 
-          {/tp:link}
-         </ul> 
-        </div> 
-       </div> 
-       <div class="col-md-3 col-sm-4"> 
-        <div class="single-footer-widget"> 
-         <h3>加入我们</h3> 
-         <div class="instagram-image"> 
-          <div class="footer-img"> 
-           <img src="{$system.qrcode}" />
-          </div> 
-          
-         </div> 
-        </div> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-    <!--End of Footer Widget Area--> 
-    <!--Footer Area Start--> 
-    <footer class="footer-area"> 
-     <div class="container"> 
-      <div class="row"> 
-       <div class="col-md-6 col-sm-7"> 
-        <span>{$system.copyright}</span> 
-       </div> 
-       <div class="col-md-6 col-sm-5"> 
-        <div class="column-right"> 
-         <span>备案号：{$system.icp}</span> 
-        </div> 
-       </div> 
-      </div> 
-     </div> 
-    </footer> 
-    <!--End of Footer Area--> 
+<footer class="footer">
+	<div class="wrap fixed">
+		<div class="foot-top fixed">
+			<label> 友情链接</label>
+			<div class="sel_box">
+				<dl class="select-box">
+					<dt>
+						<a href="http://www.nhc.gov.cn/" target="_blank"><b>中华人民共和国国家卫生健康委员会</b></a><i class="ico"></i>
+					</dt>
+					<dd>
+						<a data-val="中华人民共和国国家卫生健康委员会" data-index="0" href="http://www.nhc.gov.cn/" target="_blank">中华人民共和国国家卫生健康委员会</a><a
+							data-val="中国疾病预防控制中心" data-index="0" href="http://www.chinacdc.cn/" target="_blank">中国疾病预防控制中心</a><a
+							data-val="国务院国有资产监督管理委员会" data-index="0" href="http://www.sasac.gov.cn/" target="_blank">国务院国有资产监督管理委员会</a><a
+							data-val="中华人民共和国国家发展和改革委员会" data-index="0" href="http://www.ndrc.gov.cn/" target="_blank">中华人民共和国国家发展和改革委员会</a><a
+							data-val="国家食品药品监督管理总局" data-index="0" href="http://samr.cfda.gov.cn/WS01/CL0001/"
+							target="_blank">国家食品药品监督管理总局</a><a data-val="中国食品药品检定研究院" data-index="0"
+															   href="http://www.nicpbp.org.cn/CL0001/" target="_blank">中国食品药品检定研究院</a><a
+							data-val="中华人民共和国科学技术部" data-index="0" href="http://www.most.gov.cn/" target="_blank">中华人民共和国科学技术部</a><a
+							data-val="中华人民共和国工业和信息化部" data-index="0" href="http://www.miit.gov.cn/" target="_blank">中华人民共和国工业和信息化部</a>
+					</dd>
+				</dl>
+				<input type="hidden" class="select-hidden">
+			</div>
+			<div class="sel_box">
+				<dl class="select-box">
+					<dt>
+						<a href="http://www.sinopharm.com/" target="_blank"><b>中国医药集团有限公司</b></a><i class="ico"></i>
+					</dt>
+					<dd>
+						<a data-val="中国医药集团有限公司" data-index="0" href="http://www.sinopharm.com/" target="_blank">中国医药集团有限公司</a>
+					</dd>
+				</dl>
+				<input type="hidden" class="select-hidden">
+			</div>
+			<div class="sel_box">
+				<dl class="select-box">
+					<dt>
+						<a href="http://www.vacmic.com/" target="_blank"><b>兰州生物制品研究所有限责任公司</b></a><i class="ico"></i>
+					</dt>
+					<dd>
+						<a data-val="兰州生物制品研究所有限责任公司" data-index="0" href="http://www.vacmic.com/" target="_blank">兰州生物制品研究所有限责任公司</a><a
+							data-val="成都生物制品研究所有限责任公司" data-index="0" href="http://www.cdibp.com/" target="_blank">成都生物制品研究所有限责任公司</a><a
+							data-val="长春生物制品研究所有限责任公司" data-index="0" href="http://www.ccbio.net/" target="_blank">长春生物制品研究所有限责任公司</a><a
+							data-val="上海生物制品研究所有限责任公司" data-index="0" href="http://www.siobp.com/home/index/"
+							target="_blank">上海生物制品研究所有限责任公司</a><a data-val="武汉生物制品研究所有限责任公司" data-index="0"
+																  href="http://www.wibp.com.cn/Chs/Default.aspx"
+																  target="_blank">武汉生物制品研究所有限责任公司</a><a
+							data-val="国药中生生物技术研究院有限公司" data-index="0" href="http://www.cnvsi.com/" target="_blank">国药中生生物技术研究院有限公司</a><a
+							data-val="北京天坛生物制品股份有限公司" data-index="0" href="http://www.tiantanbio.com/" target="_blank">北京天坛生物制品股份有限公司</a><a
+							data-val="国药集团动物保健股份有限公司" data-index="0" href="http://www.spah.com.cn/" target="_blank">国药集团动物保健股份有限公司</a><a
+							data-val="北京生物制品研究所有限责任公司" data-index="0" href="" target="_blank">北京生物制品研究所有限责任公司</a>
+					</dd>
+				</dl>
+				<input type="hidden" class="select-hidden">
+			</div>
+		</div>
+		<div class="foot-bot">
+			<ul class="fixed fnt_16">
+				<li><a href="/other/sitemap.html">网站地图</a></li>
+				<li><a href=" /about/subsidiary.html
+" target="_blank"> 成员企业</a></li>
+				<li><a href="/exchange/index.html">交流中心</a></li>
+				<li><a href=" http://oa.cnbg.com.cn/seeyon/main.do
+" target="_blank"> OA入口</a></li>
+				<li><a href=" https://mail.sinopharm.com/coremail/index.jsp
+" target="_blank"> 企业邮箱</a></li>
+				<li><a href="/other/law.html">法律声明</a></li>
+			</ul>
+			<div class="cop">
+				<p>中国生物技术股份有限公司 All Rights Reserved 2018 本站网络实名：中国生物技术股份有限公司<span style="margin-left:15px"><a
+						href="http://www.xinhongru.com/" target="_blank">Powered by 新鸿儒</a></span></p>
+				<p>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11005302</a>
+					<span>地址：北京市朝阳区惠新东街4号富盛大厦2座15层</span>
+					<span>互联网药品信息服务资格证书编号：（京）-非经营性-2018-0278</span>
+				</p>
+				<p><span>电话：010-84663377</span><span>传真：010-84663322</span></p>
+			
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="q_link">
+	<a href="https://b2h.cnbg.com.cn/cnbgb2b/login" target="_blank">
+		<span><img src="/images/dot43.png"></span>
+		<p class="fnt_18">电子商务</p>
+	</a>
+	<a href="news/notice.html" target="_blank">
+		<span><img src="images/dot44.png"></span>
+		<p class="fnt_18">通知公告</p>
+	</a>
+</div>

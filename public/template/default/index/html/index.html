@@ -1,310 +1,160 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
- <head> 
-  <meta charset="utf-8" /> 
-  <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
-  <title>{$title}</title> 
-  <meta name="keywords" content="{$keywords}" /> 
-  <meta name="description" content="{$description}" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" /> 
-  <link rel="shortcut icon" type="image/x-icon" href="{$public}img/favicon.ico" /> 
-  {include file="common/css"/}
- </head> 
- <body> 
-  <!--[if lt IE 8]>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>{$title}</title>
+  <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <link rel="shortcut icon" type="image/x-icon" href="{$public}img/favicon.ico" />
+  {include file="common/head"/}
+ </head>
+ <body>
+    <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]--> 
-  <!--Main Wrapper Start--> 
-  <div class="as-mainwrapper"> 
-   <!--Bg White Start--> 
-   <div class="bg-white"> 
-    <!--Header Area Start--> 
-    {include file="common/header"/} 
-    <!--End of Header Area--> 
-	
-    <!--Slider Area Start-->
-    <div class="slider-area slider-two">
-        <div class="preview-2">
-            <div id="nivoslider" class="slides">	
-            	{tp:ad name='ad' id='1'}
-                <img src="{$ad.image}" alt="{$ad.name}" title="#slider-1-caption{$key+1}"/>
+    <![endif]-->
+    <!--Header Area Start-->
+    {include file="common/header"/}
+    <!--End of Header Area-->
+    <div class="inbanner">
+        <div class="swiper-container banner_index ratio-img" data-ratio="0.4921">
+            <div class="swiper-wrapper">
+                {tp:ad name='ad' id='1'}
+                <div class="swiper-slide {$ad.name==4 ? ' ban_video' : ''} ratio-img bg-cover" {$ad.name==4 ? ' data-video="{$public}video/4.mp4"' : ''} data-ratio="0.4921" style="background-image: url({$ad.image});">
+                    <a href="{$ad.url}" target="_blank">
+                        <img src="{$ad.image}">
+                        <div class="txt a-m-c c_white txt1">
+                            <h2 class="fnt_60">
+                            <h3 class="fnt_16"></h3>
+                        </div>
+                    </a>
+                </div>
                 {/tp:ad}
-            </div> 
-            
-            {tp:ad name='ad' id='1'}
-            <div id="slider-1-caption{$key+1}" class="nivo-html-caption nivo-caption">
-                <div class="banner-content slider-{$key+1}">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="text-content-wrapper">
-                                    <div class="text-content">
-                                        <h1 class="title1">{$ad.name}</h1>
-                                        <p class="sub-title hidden-sm hidden-xs">{$ad.description|raw|textareaBr}</p>
-                                        <div class="banner-readmore">
-                                            <a class="button-default bg-blue" href="{$ad.url}">了解详情</a>	                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            {/tp:ad}
-            	 
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-    <!--End of Slider Area-->
-	
-    <!--About Area Start-->
-    <div class="about-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="about-container">
-                        <h3>WHY US ?</h3>
-                        <p>{tp:debris name="AboutUs" type='content' /}</p>
-                        <a class="button-default" href="{tp:cate id='6' type='url'/}">查看更多</a>	      
-                    </div>
+
+    <div class="main">
+        <div class="index-part01">
+            <div class="wrap fixed">
+                <h2 class="tit fnt_36 wow fadeInUp">
+                    <a href="" target="_blank"> 产品服务</a>
+                </h2>
+                <ul class="fixed">
+                    {tp:ad name='ad' id='2'}
+                    <li class="wow zoomIn" data-wow-delay="0.2s">
+                        <a href="{$ad.url}" target="_blank">
+                            <div class="ico"><img src="{$ad.image}"></div>
+                            <h3 class="fnt_20">Human Vaccine</h3>
+                            <p class="fnt_18">{$ad.name}</p>
+                        </a>
+                    </li>
+                    {/tp:ad}
+                </ul>
+                <div class="p1_search wow fadeInUp" data-wow-delay="1.4s">
+                    <input type="text" name="" id="product_key" class="inp_ser fnt_18" placeholder="搜索更多产品">
+                    <button class="btn_ser" id="product_submit"></button>
                 </div>
             </div>
         </div>
     </div>
-    <!--End of About Area-->
-    <!--Online Product Area Start-->
-    <div class="product-area section-bottom-padding bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">
-                            <h3>{tp:cate id='8' type='cate_name'/}</h3>
-                            <p>{tp:cate id='8' type='en_name'/}</p>
+
+    <div class="index-part02">
+        <div class="video-box ratio-img" data-ratio="0.3343">
+            <div id="indexplayer"></div>
+            <div class="index_video">
+                <video src="{$public}video/5.mp4" type="video/mp4" loop="false" poster="{$public}images/img01.jpg"></video>
+                <div class="layer">
+                    <div class="wrap">
+                        <div class="inner v-m-c">
+                            <em class="btn_play wow fadeInUp" data-wow-delay="0.5s"></em>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                {tp:list id="8" name="list" limit="4"}
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <div class="single-product-item">
-                        {if $list.image}
-                        <div class="single-product-image">
-                            <a href="{$list.url}"><img src="{$list.image}" alt="{$list.title}"></a>
-                        </div>
-                        {/if}
-                        <div class="single-product-text">
-                            <h4><a href="{$list.url}">{$list.title}</a></h4>
-                            <div class="product-buttons">
-                                <a class="button-default cart-btn floatright" href="{$list.url}">查看详细</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="wrap">
+                <div class="inner v-m-c">
+                    <h2 class="fnt_36 wow fadeInUp">
+                        <a href=""> 研发创新</a>
+                    </h2>
+                    <ul class="digitbox fixed">
+                        {tp:ad name='ad' id='3'}
+                        <li class="wow zoomIn">
+                            <span class="fnt_72"><em id="in-count-1" rel="{$ad.name}">{$ad.name}</em>+</span>
+                            <p>
+                                <a href="javascript:void(0);">
+                                    {$ad.description|raw|textareaBr}
+                                </a>
+                            </p>
+                        </li>
+                        {/tp:ad}
+                    </ul>
+                    <em class="btn_play wow fadeInUp" data-wow-delay="0.2s"></em>
                 </div>
-                {/tp:list}
+            </div>
+            <div class="layer layervideo">
             </div>
         </div>
-    </div>
-    <!--End of Online Product Area-->
-    <!--Fun Factor Area Start-->
-    <div class="fun-factor-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-wrapper white">
-                        <div class="section-title">
-                            <h3>IMPORTANT FACTS</h3>
-                            <p>There are many variations of passages of Lorem Ipsum</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <div class="single-fun-factor">
-                        <h4>Teachers</h4>
-                        <h2><span class="counter">79</span>+</h2>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="single-fun-factor">
-                        <h4>Members</h4>
-                        <h2><span class="counter">120</span>+</h2>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="single-fun-factor">
-                        <h4>Courses</h4>
-                        <h2><span class="counter">36</span>+</h2>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="single-fun-factor">
-                        <h4>Countries</h4>
-                        <h2><span class="counter">20</span>+</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Fun Factor Area-->
-    <!--Latest News Area Start--> 
-    <div class="latest-area section-padding bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">
-                            <h3>{tp:cate id='4' type='cate_name'/}</h3>
-                            <p>{tp:cate id='4' type='en_name'/}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {tp:list id="4" name="list" limit="4" where="image <>''"}
-                <div class="single-latest-item col-md-6">
-                    {if $list.image}
-                    <div class="single-latest-image">
-                        <a href="{$list.url}"><img src="{$list.image}" ></a>
-                    </div>
-                    {/if}
-                    <div class="single-latest-text">
-                        <h3><a href="{$list.url}">{$list.title}</a></h3>
-                        <div class="single-item-comment-view">
-                           <span><i class="zmdi zmdi-calendar-check"></i>{$list.create_time|date="Y-m-d H:i:s"}</span>
-                           <span><i class="zmdi zmdi-eye"></i>{$list.hits}</span>
-                           <span><i class="zmdi zmdi-pin-account"></i>{$list.author}</span>
-                           <!--<span><i class="zmdi zmdi-label"></i>{$list.source}</span>-->
-                       </div>
-                       <p class="line_three">{$list.summary}</p>
-                       <a href="{$list.url}" class="button-default">查看详细</a>
-                    </div>
-                </div>
-                {/tp:list}
-            </div>
-        </div>
-    </div>
-    <!--End of Latest News Area--> 
-    <!--Event Area Start-->
-    <div class="event-area section-padding bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">
-                            <h3>{tp:cate id='7' type='cate_name'/}</h3>
-                            <p>{tp:cate id='7' type='en_name'/}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {tp:list id="7" name="list" limit="3"}
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-event-item">
-                        {if $list.image}
-                        <div class="single-event-image">
-                            <a href="{$list.url}">
-                                <img src="{$list.image}" alt="{$list.title}">
-                                <span><span>{$list.create_time|date="d"}</span>{$list.create_time|date="M"}</span>
+        <div class="wrap_v">
+            <div class="inner">
+                <ul class="digitbox fixed">
+                    {tp:ad name='ad' id='3'}
+                    <li class="wow zoomIn">
+                        <span class="fnt_72"><em id="in-count-2" rel="{$ad.name}">{$ad.name}</em>+</span>
+                        <p>
+                            <a href="javascript:void(0);">
+                                {$ad.description|raw|textareaBr}
                             </a>
-                        </div>
-                        {/if}
-                        <div class="single-event-text">
-                            <h3><a href="{$list.url}">{$list.title}</a></h3>
-                            <div class="single-item-comment-view">
-                               <span><i class="zmdi zmdi-time"></i>{$list.create_time|date="Y-m-d H:i:s"}</span>
-                               <span><i class="zmdi zmdi-pin-account"></i>{$list.author}</span>
-                           </div>
-                           <p class="line_three">{$list.summary}</p>
-                           <a class="button-default" href="{$list.url}">查看详细</a>
-                        </div>
-                    </div>
-                </div>
-                {/tp:list}
-                
+                        </p>
+                    </li>
+                    {/tp:ad}
+                </ul>
             </div>
         </div>
     </div>
-    <!--End of Event Area-->
-    <!--Testimonial Area Start-->
-    <div class="testimonial-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <div class="row">
-                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-                            <div class="testimonial-image-slider text-center">
-                            	{tp:list id="12" name="list" limit="6"}
-                                <div class="sin-testiImage">
-                                    <img src="{$list.image}" alt="{$list.title}" />
-                                </div>
-                                {/tp:list}
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="testimonial-text-slider text-center">
-                    	{tp:list id="12" name="list" limit="6"}
-                        <div class="sin-testiText">
-                            <h2><a href="{$list.url}">{$list.title}</a></h2>
-                            <p>{$list.summary}</p>
-                        </div>
-                        {/tp:list}
-                    </div>   
-                </div>
-            </div>
+
+    <div class="index-part03">
+        <div class="wrap">
+            <h2 class="tit fnt_36 wow fadeInUp">
+                <a href="">质量管理</a>
+            </h2>
+            <ul class="fixed">
+                {tp:ad name='ad' id='4'}
+                <li class="wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="{$ad.url}" class="tran_scale">
+                        <img src="{$ad.image}" onerror="lod(this)">
+                        <h2 class="fnt_24">
+                            {$ad.description|raw|textareaBr}
+                        </h2>
+                        <div class="layer"></div>
+                    </a>
+                </li>
+                {/tp:ad}
+            </ul>
         </div>
     </div>
-    <!--End of Testimonial Area-->
-    <!--Course Area Start-->
-    <div class="course-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-wrapper">
-                        <div class="section-title">
-                            <h3>{tp:cate id='11' type='cate_name'/}</h3>
-                            <p>{tp:cate id='11' type='en_name'/}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                {tp:list id="11" name="list" limit="3"}
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-item">
-                        {if $list.image}
-                        <div class="single-item-image overlay-effect">
-                            <a href="{$list.download}" target="_blank"><img src="{$list.image}" alt="{$list.title}"></a>
-                        </div>
-                        {/if}
-                        <div class="single-item-text">
-                            <h4><a href="{$list.download}">{$list.title}</a></h4>
-                            <div class="single-item-text-info">
-                                <span>作者： <span>{$list.author}</span></span>
-                                <span>时间：<span>{$list.create_time|date="Y-m-d"}</span></span>
-                            </div>  
-                        </div>
-                        <div class="button-bottom">
-                            <a href="{$list.download}" class="button-default" target="_blank">立即下载</a>
-                        </div>
-                    </div>
-                </div> 
-                {/tp:list}
-                <div class="col-md-12 col-sm-12 text-center">
-                    <a href="{tp:cate id='17' type='url'/}" class="button-default button-large">查看更多<i class="zmdi zmdi-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Course Area-->
-    {include file="common/footer"/}
-   </div> 
-   <!--End of Bg White--> 
-  </div> 
-  <!--End of Main Wrapper Area--> 
-  {include file="common/js"/}
+
+<!--    <div class="index-part04">-->
+<!--        <div class="wrap">-->
+<!--            <h2 class="tit fnt_36 wow fadeInUp">-->
+<!--                <a href="">新闻中心</a>-->
+<!--            </h2>-->
+<!--            <ul class="fixed">-->
+<!--                <li class="wow zoomIn">-->
+<!--                    <a href="/content/details_13_5467.html" target="_blank">-->
+<!--                        <div class="img tran_scale ratio-img" data-ratio="0.58672"><span class="fnt_18"> 04-20</span><img src="/upload/image/20200420/1587372811_406x238.png" alt="0_1587372070.jpeg" title="0_1587372070.jpeg" onerror="lod(this)" ></div>-->
+<!--                        <div class="txt">-->
+<!--                            <h2 class="fnt_20 clamp">【人民日报】刊发中国生物署名文章：战疫展现央企责任担当</h2>-->
+<!--                            <div class="c clamp">3月20日，国药中国生物举办主题党课，党委书记朱京津以“承担国家责任，保障人民健康，在新冠肺炎阻击战中发挥央企主力军作用”为题作专题授课。党课内容在网络发布后，受到广泛关注。 4月20日，《人民日报》对中国生物党课部分内容进行了摘编，刊发《战疫展现央企责任担当》署名文章。</div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
  </body>
 </html>
