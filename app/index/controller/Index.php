@@ -163,7 +163,7 @@ class Index extends Base
                         unset($data['status']);
                         //默认收件人为系统设置中的邮件
                         $email = $this->system['email'];
-                        $title = 'SIYUCMS提醒：您的网站有新的留言';
+                        $title = '重庆安隐科技：您的网站有新的留言';
                         //拼接内容
                         $fields = Db::name('field')
                             ->where('module_id',$moduleId)
