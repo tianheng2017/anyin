@@ -17,7 +17,7 @@ return [
     // 是否使用背景图
     'useImgBg' => false,
     //验证码字符大小
-    'fontSize' => 25,
+    'fontSize' => 24,
     // 是否使用混淆曲线
     'useCurve' => false,
     //是否添加杂点
