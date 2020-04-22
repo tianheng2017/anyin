@@ -31,20 +31,17 @@
             {include file="common/nav"/}
             
             <div class="rr">
-                <ul class="video-list fixed">
+                <ul class="news-list fixed">
                     
                     {tp:list name="list" order="create_time DESC"}
-                    <li >
-                        <a href="{$list.url}" target="_blank">
-                            <div class="vid-box ratio-img" data-ratio="0.7505">
-                                <img src="{$list.image}" onerror="lod(this)">
-                                <div class="layer"></div>
-                            </div>
-                        </a>
-                        <h2 class="fnt_20">
+                    <li>
+                        <span>{$list.create_time|date="Y.m.d"}</span>
+                        <div class="line"></div>
+                        <h2 class="ellipsis fnt_20">
                             <a href="{$list.url}" target="_blank">{$list.title}</a>
                         </h2>
-                        <div class="line"></div>
+                        <p class="clamp">{$list.summary}</p>
+                        <a href="{$list.url}" class="more" target="_blank"></a>
                     </li>
                     {/tp:list}
                     
