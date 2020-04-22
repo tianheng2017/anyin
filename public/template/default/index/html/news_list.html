@@ -28,22 +28,26 @@
     <div class="news-part1">
         <div class="inwrap">
             <h2 class="intit fnt_36 wow fadeInUp">
-                <a href="trend.html"> 企业动态</a>
+                <a href="/index/trend.html">企业动态</a>
             </h2>
             <div class="con fixed">
+                {tp:list name="list" order="create_time DESC" where="image <> ''"}
+                {if $key == 0}
                 <div class="ll-box ratio-img wow zoomIn" data-ratio="0.7770" data-wow-delay="0.2s">
                     <div class="img ratio-img" data-ratio="0.5866">
-                        <a href="/content/details_12_5461.html" class="tran_scale" target="_blank">
-                            <img src="/upload/image/20200420/1587354166_963x565.jpeg" alt="1_1587354118.jpeg" title="1_1587354118.jpeg" onerror="lod(this)">
-                            <span class="fnt_18"> 04-18</span>
+                        <a href="{$list.url}" class="tran_scale" target="_blank">
+                            <img src="{$list.image}" alt="1_1587354118.jpeg" title="1_1587354118.jpeg" onerror="lod(this)">
+                            <span class="fnt_18">{$list.create_time|date="m-d"}</span>
                         </a>
                     </div>
                     <div class="txt">
                         <h2 class="fnt_20 clamp">
-                            <a href="/content/details_12_5461.html" target="_blank">中国生物上海捷诺生物荷兰公司新型冠状病毒核酸检测试剂盒获得CE-IVD认证</a>
+                            <a href="{$list.url}" target="_blank">{$list.title}</a>
                         </h2>
                     </div>
                 </div>
+                {/if}
+                {/tp:list}
                 <div class="rr-box ratio-img" data-ratio="0.7770">
                     <ul class="fixed">
                         <li class="wow fadeInUp" data-wow-delay="0.1s">
