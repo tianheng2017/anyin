@@ -1,20 +1,20 @@
-<div class="breadcrumb-banner-area" style="background:url('{tp:cate id="$cate['topid']" type='image' /}') no-repeat scroll 0 0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-text">
-                    <h1 class="text-center">{tp:cate id="$cate['topid']" type='en_name' /}</h1>
-                    <div class="breadcrumb-bar">
-                        <ul class="breadcrumb text-center">
-                            <li><a href="/">首页</a></li>
-                            <!--<li>{tp:cate type='cate_name' /}</li>-->
-                            {tp:position name='v'}
-                            <li><a href="{$v.url}">{$v.cate_name}</a></li>
-                            {/tp:position}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="banner bg-cover" style="background-image: url('{$cate.image}');">
+    <img src="{$cate.image}">
+    <div class="inwrap a-m-c">
+        <h2 class="v-m-c">
+            <span class="fnt_60">{$cate.cate_name}</span>
+        </h2>
+    </div>
+</div>
+<div class="site">
+    <div class="inwrap">
+        <a href='/'  class="home"  title="首页">首页</a>  &gt;
+        {tp:position name='v'}
+            {if $v.id == $cate.id}
+                <span>{$v.cate_name}</span>
+            {else /}
+                <a  href='{$v.url}' title={$v.cate_name}>{$v.cate_name}</a>  &gt;
+            {/if}
+        {/tp:position}
     </div>
 </div>
