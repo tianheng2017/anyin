@@ -32,7 +32,7 @@ class Captcha
     private $session = null;
 
     // 验证码字符集合
-    protected $codeSet = '0123456789';
+    protected $codeSet = '2345678abcdefhijkmnpqrstuvwxyzABCDEFGHJKLMNPQRTUVWXY';
     // 验证码过期时间（s）
     protected $expire = 1800;
     // 使用中文验证码
@@ -44,9 +44,9 @@ class Captcha
     // 验证码字体大小(px)
     protected $fontSize = 25;
     // 是否画混淆曲线
-    protected $useCurve = false;
+    protected $useCurve = true;
     // 是否添加杂点
-    protected $useNoise = false;
+    protected $useNoise = true;
     // 验证码图片高度
     protected $imageH = 0;
     // 验证码图片宽度
@@ -197,7 +197,7 @@ class Captcha
                 }
             }
             $dir->close();
-            $this->fontttf = '4.ttf';
+            $this->fontttf = $ttfs[array_rand($ttfs)];
         }
 
         $fontttf = $ttfPath . $this->fontttf;
