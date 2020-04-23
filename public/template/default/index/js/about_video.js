@@ -2,10 +2,9 @@
 $(function(){
 
   if ($("html").hasClass("lt9")){
-    $('head').prepend('<link href="/css/idangerous.swiper.css" rel="stylesheet" type="text/css" />');
-    $('head').prepend('<script type="text/javascript" src="/js/idangerous.swiper.min.js"></script>');
+    $('head').prepend('<link href="/template/default/index/css/idangerous.swiper.css" rel="stylesheet" type="text/css" />');
+    $('head').prepend('<script type="text/javascript" src="/template/default/index/js/idangerous.swiper.min.js"></script>');
     about_slide_ie();
-
     videoBox1($(".about-part2 li").width(), $(".about-part2 li").height(), $(".about-part2 li:eq(0) video").attr("src"), $(".about-part2 li:eq(0) video").attr("poster"));
     videoBox2($(".about-part2 li").width(), $(".about-part2 li").height(), $(".about-part2 li:eq(1) video").attr("src"), $(".about-part2 li:eq(1) video").attr("poster"));
     videoBox3($(".about-part2 li").width(), $(".about-part2 li").height(), $(".about-part2 li:eq(2) video").attr("src"), $(".about-part2 li:eq(2) video").attr("poster"));
@@ -14,17 +13,11 @@ $(function(){
     videoBox6($(".about-part2 li").width(), $(".about-part2 li").height(), $(".about-part2 li:eq(5) video").attr("src"), $(".about-part2 li:eq(5) video").attr("poster"));
 }
 else{
-    $('head').prepend('<link href="/css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css" />');
-    $('head').prepend('<script type="text/javascript" src="/js/swiper-3.4.2.jquery.min.js"></script>');
+    $('head').prepend('<link href="/template/default/index/css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css" />');
+    $('head').prepend('<script type="text/javascript" src="/template/default/index/js/swiper-3.4.2.jquery.min.js"></script>');
     about_slide();
-    
-    
     video_play();
 }
-
-     
-  
-
      $(".about2_p").mCustomScrollbar({});
 
      $(".about_block03 .public_tite li").click(function(){
@@ -35,23 +28,7 @@ else{
 
     })
 
-
-
-      
       if($(window).width()>=768){
-        // var myFullpage = new fullpage('#fullpage', {
-        //     verticalCentered: true,
-        //     anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6'],
-        //     menu: '#menu',
-        //     scrollingSpeed:1000
-        //   });
-
-
-
-           
-
-
-
      }
 
 
@@ -187,7 +164,7 @@ function video_play(){
 
 
   function videoBox1(width, height, url,img) {
-    var s1 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+    var s1 = new SWFObject("flvplayer.swf","single",width,height,"7");
       s1.addParam("allowfullscreen","true");
       s1.addParam("wmode","transparent");
       s1.addVariable("file",url);
@@ -202,7 +179,7 @@ function video_play(){
     }
 
     function videoBox2(width, height, url,img) {
-    var s2 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+    var s2 = new SWFObject("flvplayer.swf","single",width,height,"7");
       s2.addParam("allowfullscreen","true");
       s2.addParam("wmode","transparent");
       s2.addVariable("file",url);
@@ -216,7 +193,7 @@ function video_play(){
       s2.write("indexplayer2");
     }
     function videoBox3(width, height, url,img) {
-      var s3 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+      var s3 = new SWFObject("flvplayer.swf","single",width,height,"7");
         s3.addParam("allowfullscreen","true");
         s3.addParam("wmode","transparent");
         s3.addVariable("file",url);
@@ -230,7 +207,7 @@ function video_play(){
         s3.write("indexplayer3");
       }
     function videoBox4(width, height, url,img) {
-      var s4 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+      var s4 = new SWFObject("flvplayer.swf","single",width,height,"7");
         s4.addParam("allowfullscreen","true");
         s4.addParam("wmode","transparent");
         s4.addVariable("file",url);
@@ -244,7 +221,7 @@ function video_play(){
         s4.write("indexplayer4");
       }
     function videoBox5(width, height, url,img) {
-      var s5 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+      var s5 = new SWFObject("flvplayer.swf","single",width,height,"7");
         s5.addParam("allowfullscreen","true");
         s5.addParam("wmode","transparent");
         s5.addVariable("file",url);
@@ -258,7 +235,7 @@ function video_play(){
         s5.write("indexplayer5");
       }
       function videoBox6(width, height, url,img) {
-        var s6 = new SWFObject("../js/flvplayer.swf","single",width,height,"7");
+        var s6 = new SWFObject("flvplayer.swf","single",width,height,"7");
           s6.addParam("allowfullscreen","true");
           s6.addParam("wmode","transparent");
           s6.addVariable("file",url);
