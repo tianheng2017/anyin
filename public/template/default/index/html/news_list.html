@@ -31,31 +31,34 @@
                 <a href="{:url('index/trend')}">企业动态</a>
             </h2>
             <div class="con fixed">
+                
+                {tp:list name="list" order="create_time DESC" where="image <> ''"}
+                {if $key == 0}
                 <div class="ll-box ratio-img wow zoomIn" data-ratio="0.7770" data-wow-delay="0.2s">
-                    {tp:list name="list" order="create_time DESC" where="image <> ''"}
-                    {if $key == 0}
                     <div class="img ratio-img" data-ratio="0.5866">
                         <a href="{$list.url}" class="tran_scale" target="_blank">
-                            <img src="{$list.image}" alt="1_1587354118.jpeg" title="1_1587354118.jpeg" onerror="lod(this)">
+                            <img src="{$list.image}" alt="{:explode('/', $list.image)[3]}" title="{:explode('/', $list.image)[3]}" onerror="lod(this)">
                             <span class="fnt_18">{$list.create_time|date="m-d"}</span>
                         </a>
                     </div>
-                    {/if}
-                    {/tp:list}
                     <div class="txt">
                         <h2 class="fnt_20 clamp">
                             <a href="{$list.url}" target="_blank">{$list.title}</a>
                         </h2>
                     </div>
                 </div>
+                {/if}
+                {/tp:list}
+                
                 <div class="rr-box ratio-img" data-ratio="0.7770">
                     <ul class="fixed">
+                        
                         {tp:list name="list" order="create_time DESC" where="image <> ''"}
                         {if $key == 1 || $key==2 || $key==3}
                         <li class="wow fadeInUp" data-wow-delay="0.1s">
                             <div class="img">
                                 <a href="{$list.url}" class="tran_scale" target="_blank">
-                                    <img src="{$list.image}" alt="0_1587371221.jpeg" title="0_1587371221.jpeg" onerror="lod(this)">
+                                    <img src="{$list.image}" alt="{:explode('/', $list.image)[3]}" title="{:explode('/', $list.image)[3]}" onerror="lod(this)">
                                 </a>
                             </div>
                             <div class="txt">
@@ -67,6 +70,10 @@
                         </li>
                         {/if}
                         {/tp:list}
+                        
+                        {if empty($list)}
+                        <h2>暂无相关内容</h2>
+                        {/if}
                     </ul>
                 </div>
             </div>
