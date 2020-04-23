@@ -74,6 +74,7 @@
                         {if empty($list)}
                         <h2>暂无相关内容</h2>
                         {/if}
+                        
                     </ul>
                 </div>
             </div>
@@ -83,20 +84,33 @@
         </div>
     </div>
     
-    <div class="news-part2 bg-cover" style="background-image: url(/upload/img22.jpg);">
+    <div class="news-part2 bg-cover" style="background-image: url({$public}images/img22.jpg);">
         <div class="inwrap fixed">
             <div class="ll-box">
-                <h2 class="fnt_36 wow fadeInUp"><a href="media.html"> 媒体焦点</a></h2>
+                <h2 class="fnt_36 wow fadeInUp"><a href="media.html">媒体焦点</a></h2>
                 <ul class="fixed a-list wow zoomIn" data-wow-delay="0.2s">
                     
-                    <li><a href="/content/details_13_5467.html" class="ellipsis" target="_blank">【人民日报】刊发中国生物署名文章：战疫展现央企责任担当</a><span> 2020-04-20</span></li><li><a href="/content/details_13_5462.html" class="ellipsis" target="_blank">【中国医药报】中国生物坚守抗疫一线展现央企担当</a><span> 2020-04-19</span></li><li><a href="/content/details_13_5438.html" class="ellipsis" target="_blank">【科技日报】第一针！新冠病毒灭活疫苗临床试验启动</a><span> 2020-04-16</span></li><li><a href="/content/details_13_5436.html" class="ellipsis" target="_blank">【红星新闻】中国生物高层揭秘全球首个新冠灭活疫苗：Ⅰ期受试者最多注射3针，居家观察</a><span> 2020-04-15</span></li><li><a href="/content/details_13_5435.html" class="ellipsis" target="_blank">【新华网】独家连线：专家详解新冠病毒灭活疫苗研发进展</a><span> 2020-04-15</span></li>                        </ul>
-                <a href="media.html" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
+                    {tp:list name="list" order="create_time DESC"}
+                    <li>
+                        <a href="{$list.url}" class="ellipsis" target="_blank">{$list.title}</a>
+                        <span>{$list.create_time|date="Y-m-d"}</span>
+                    </li>
+                    {/tp:list}
+                    
+                    </ul>
+                <a href="{:url('index/media')}" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
             </div>
             <div class="rr-box">
-                <h2 class="fnt_36 wow fadeInUp"><a href="subject.html"> 专题专栏</a></h2>
+                <h2 class="fnt_36 wow fadeInUp"><a href="subject.html">专题专栏</a></h2>
                 <ul class="fixed a-list wow zoomIn" data-wow-delay="0.2s">
-                    <li><a href="/zt/index_123.html" class="ellipsis" target="_blank">中国生物【抗击新冠肺炎疫情】专题网</a><span> 2020-02-19</span></li><li><a href="/subject/index.html#Page1" class="ellipsis" target="_blank">百年中生：1919-2019</a><span> 2019-12-05</span></li><li><a href="/zhuanti/20110801/" class="ellipsis" target="_blank">EV71手足口病认识和防治</a><span> 2019-02-12</span></li>                        </ul>
-                <a href="subject.html" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
+                    {tp:list name="list" order="create_time DESC"}
+                    <li>
+                        <a href="{$list.url}" class="ellipsis" target="_blank">{$list.title}</a>
+                        <span>{$list.create_time|date="Y-m-d"}</span>
+                    </li>
+                    {/tp:list}
+                </ul>
+                <a href="{:url('index/subject')}" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
             </div>
         </div>
     </div>

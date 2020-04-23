@@ -14,11 +14,11 @@ $(function () {
 
 
 
-    imgratio()//初始化图片ratio
+    imgratio();//初始化图片ratio
 
     setTimeout(function () {
-        imgratio()
-    }, 100)
+        imgratio();
+    }, 100);
 
     $(".ratio-img").each(function (index, element) {
         $(this).attr({ "src": $(this).data("src") });//图片预加载 
