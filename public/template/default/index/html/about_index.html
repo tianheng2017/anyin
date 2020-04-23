@@ -98,154 +98,38 @@
         </div>
     </div>
     <div class="section" id="section3">
-        <div class="intro" style="background-image: url(/images/about_bg_04.jpg);background-size: 100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/about_bg_04.jpg,sizingMethod='scale');">
+        <div class="intro" style="background-image: url({$public}images/about_bg_04.jpg);background-size: 100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src={$public}images/about_bg_04.jpg,sizingMethod='scale');">
             <div class="dowebok_bg dowebok_04" >
                 <div class="inwrap">
                     <div class="about_block04">
                         <div class="about_culture">
-                            <h1 class="fnt_36 wow fadeInUp"> 企业文化</h1>
+                            <h1 class="fnt_36 wow fadeInUp">企业文化</h1>
                         </div>
                         <div class="about_c">
                             <ul>
+                                
+                                {tp:ad name='ad' id='7'}
                                 <li>
                                     <dl>
-                                        <dt class="wow zoomIn"><img src="/images/about_img01.png"></dt>
-                                        <dd>
-                                            <h3 class="fnt_30 wow fadeInUp">企业理念</h3>
-                                            <p class="fnt_16  wow fadeInUp">关爱生命 呵护健康</p>
-                                        </dd>
+                                        <dt class="wow zoomIn"><img src="{$ad.image}"></dt>
+                                        <dd>{$ad.description|raw|textareaBr}</dd>
                                     </dl>
-                                </li><li>
-                                <dl>
-                                    <dt class="wow zoomIn"><img src="/images/about_img02.png"></dt>
-                                    <dd>
-                                        <h3 class="fnt_30 wow fadeInUp">企业价值观</h3>
-                                        <p class="fnt_16  wow fadeInUp">爱与责任</p>
-                                    </dd>
-                                </dl>
-                            </li><li>
-                                <dl>
-                                    <dt class="wow zoomIn"><img src="/images/about_img03.png"></dt>
-                                    <dd>
-                                        <h3 class="fnt_30 wow fadeInUp">企业愿景</h3>
-                                        <p class="fnt_16  wow fadeInUp">成为引领国内行业发展、具有国际竞争力、<br >
-                                            受到社会尊重的创新型生物医药企业。</p>
-                                    </dd>
-                                </dl>
-                            </li>              </ul>
+                                </li>
+                                {/tp:ad}
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" id="section4">
-        <div class="intro" style="background-image: url(/images/about_bg_05.jpg);background-size: 100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/about_bg_05.jpg,sizingMethod='scale');">
-            <div class="dowebok_bg dowebok_05">
-                <div class="about-part2">
-                    <div class="inwrap">
-                        <h2 class="intit fnt_36 wow fadeInUp"> <a href="/about/video.html"> 视频之窗</a> <span class="fnt_16 wow fadeInUp">推进中国生物医药产业发展的承担者、领跑者、创新者</span> </h2>
-                        <div class="con">
-                            <div class="swiper-container">
-                                <ul class="swiper-wrapper">
-                                    <li class="v_01 swiper-slide">
-                                        <div class="con_innder">
-                                            <div class="video_box ratio-img" data-ratio="0.7870">
-                                                <div id="indexplayer1"></div>
-                                                <video src="/upload/media/20191206/20191206111311_12927.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20191128/1574930025_1319x987.png"></video>
-                                                <div class="layer"></div>
-                                            </div>
-                                            <div class="innder_title">相遇百年</div>
-                                        </div>
-                                    </li><li class="v_02 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer2"></div>
-                                            <video src="/upload/media/20191127/20191127181851_75028.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20191126/20191126153453_64808.jpg" alt="20191126091640_23708.jpg" title="20191126091640_23708.jpg"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">百年中生 高管寄语</div>
-                                    </div>
-                                </li><li class="v_03 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer3"></div>
-                                            <video src="/upload/media/20191127/20191127113010_68771.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20191126/1574754055_788x590.jpg" alt="20191126151540_99439.jpg" title="20191126151540_99439.jpg"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">中生悟空</div>
-                                    </div>
-                                </li><li class="v_04 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer4"></div>
-                                            <video src="/upload/media/20190604/20190604131844_67123.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190604/20190604132536_67713.jpg"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">创新中的中国：微观世界的战士</div>
-                                    </div>
-                                </li><li class="v_05 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer5"></div>
-                                            <video src="/upload/about3.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190429/1556508933_926x693.png"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">央视国际频道：永不停歇的疫战</div>
-                                    </div>
-                                </li><li class="v_06 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer6"></div>
-                                            <video src="/upload/media/20190426/20190426192555_80847.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190429/1556508093_933x698.png"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">央广健康：时代巨擘——赵铠</div>
-                                    </div>
-                                </li><li class="v_07 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer7"></div>
-                                            <video src="/upload/media/20190429/20190429113858_83284.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190429/1556509434_1057x791.png"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">北京卫视：世界疫苗供应商上的“中国制造”</div>
-                                    </div>
-                                </li><li class="v_08 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer8"></div>
-                                            <video src="/upload/xcp.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190508/1557302346_725x542.png"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">中国生物企业宣传片</div>
-                                    </div>
-                                </li><li class="v_09 swiper-slide">
-                                    <div class="con_innder">
-                                        <div class="video_box ratio-img" data-ratio="0.7870">
-                                            <div id="indexplayer9"></div>
-                                            <video src="/upload/media/20190429/20190429120044_40859.mp4" type="video/mp4" loop="false" controls="controls" poster="/upload/image/20190429/1556510547_1101x824.png"></video>
-                                            <div class="layer"></div>
-                                        </div>
-                                        <div class="innder_title">央视：国产乙脑疫苗首获世界卫生组织预认证</div>
-                                    </div>
-                                </li>                </ul>
-                            </div>
-                            <div class="ljx_but">
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="section fp-auto-height" id="section5">
         <div class="dowebok_bg dowebok_06" >
             <div class="about-part3">
                 <div class="inwrap">
-                    <h2 class="intit fnt_36 wow fadeInUp">  发展历程 <span class="fnt_16 wow fadeInUp">中国生物的发展史代表了中国生物制品发展史</span> </h2>
+                    <h2 class="intit fnt_36 wow fadeInUp">发展历程 <span class="fnt_16 wow fadeInUp">中国生物的发展史代表了中国生物制品发展史</span></h2>
                 </div>
             </div>
             <div class="n_about_hist cf">
@@ -254,71 +138,17 @@
                         <div class="a_his_time cf"> <a href="javascript:;" class="his_left disabled"></a>
                             <div class="index_history cf">
                                 <ul class="cf">
-                                    <li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                        <p>1919</p>
-                                    </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1926</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1934</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1942</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1946</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1949</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1950</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1953</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1955</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1958</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1960</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1978</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1979</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1982</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1988</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1989</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1990</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1997</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1998</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>1999</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2001</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2003</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2005</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2006</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2009</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2010</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2011</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2013</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2014</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2017</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2018</p>
-                                </a> </li><li class="active"> <a href="javascript:;"> <img src="/images/hist_ico_bg.png" alt="Alternate Text" />
-                                    <p>2019</p>
-                                </a> </li>                </ul>
+                                    
+                                    {tp:ad name='ad' id='8'}
+                                    <li class="active">
+                                        <a href="javascript:;">
+                                            <img src="{$public}images/hist_ico_bg.png" alt="Alternate Text" />
+                                            <p>{$ad.url}</p>
+                                        </a>
+                                    </li>
+                                    {/tp:ad}
+                                    
+                                </ul>
                             </div>
                             <a href="javascript:;" class="his_right"></a> </div>
                     </div>
@@ -326,503 +156,26 @@
                 <div class="dsj_con content_inner cf">
                     <div class="daj_line"></div>
                     <div class="daj_div cf">
-                        <dl class="1919">
-                            <dt class="fnt_18">1919</dt>
+                        
+                        {tp:ad name='ad' id='8'}
+                        <dl class="{$ad.url}">
+                            <dt class="fnt_18">{$ad.url}</dt>
                             <dd>
                                 <div class="d_con">
-                                    <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
+                                    <div class="span wow zoomIn" >
+                                        <img class="ratio-img" data-ratio="0.5609" src="{$ad.image}" alt="{$ad.name}" title="{$ad.name}" onerror="lod(this)">
+                                    </div>
                                     <div class="d_text wow fadeInUp">
                                         <div class="p cf">
-                                            <h3 class="fnt_18">中央防疫处（National Epidemic Prevention Bureau）在北京成立，地址设在天坛神乐署旧址内，主要职责为预防和控制我国传染病流行，从事对传染病的细菌学研究和进行各种生物制品的生产。</h3>
+                                            <h3 class="fnt_18">{$ad.description|raw|textareaBr}</h3>
                                         </div>
                                     </div>
                                 </div>
-                            </dd>            </dl><dl class="1926">
-                        <dt class="fnt_18">1926</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中央防疫处第三科痘苗股负责人齐长庆用一名天花患者的天花病毒，经猴、兔、牛等动物接种传代减毒，获得“天坛株”痘苗毒种。次年用于生产牛痘苗，为我国控制、消灭流行数千年的天花病发挥了重要作用。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1934">
-                        <dt class="fnt_18">1934</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505090059_25955.jpg" alt="兰州1934西北防疫处原址" title="兰州1934西北防疫处原址" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">西北防疫处（兰州生物制品研究所前身）在兰州成立，以调查及防治西北各省兽疫与制造防治急需之兽用制品为主要任务，并辅以协助民众防疫之任务。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1942">
-                        <dt class="fnt_18">1942</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中央防疫处分离出我国第一株青霉素菌种，次年开始研制青霉素。这是我国抗生素事业的开端。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1946">
-                        <dt class="fnt_18">1946</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507091321_88977.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">东北民主联军接管长春卫生技术厂，后改称东北卫生技术厂（长春生物制品研究所前身）。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1949">
-                        <dt class="fnt_18">1949</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505090352_83701.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">新中国成立前后，中央防疫实验处先后更名为中央防疫处、天坛防疫处。12月，移交中华人民共和国卫生部直接领导。同年，华东人民制药公司上海生物制品厂（上海生物制品研究所前身）成立，图为上海生物制品厂建筑。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1950">
-                        <dt class="fnt_18">1950</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505090536_15482.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中南生物学制品厂（武汉生物制品研究所前身）成立。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1953">
-                        <dt class="fnt_18">1953</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中央人民政府卫生部决定将全国公营生物制品机构改归卫生部直接领导。卫生部生物制品研究所研制生产出我国第一支黄热疫苗，长春生研所研制生产出我国第一支森林脑炎疫苗。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1955">
-                        <dt class="fnt_18">1955</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507091647_72768.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">汤飞凡主持的沙眼研究小组分离出世界上第一株“沙眼衣原体”，命名为TE8，后在国际医学界引起巨大反响，为我国赢得了荣誉，为我国微生物学界争得了光荣。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1958">
-                        <dt class="fnt_18">1958</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507101654_64726.jpg" alt="1958成都所大门" title="1958成都所大门" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">成都生物制品研究所成立。通过几年的机构调整、改造和建设，我国建成了北京、长春、成都、兰州、上海、武汉六大生物制品研究所。它们既是生产又是研究机构，逐步成为本地区应用微生物学、免疫学研究开发基地及免疫接种科学技术的指导中心。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1960">
-                        <dt class="fnt_18">1960</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国医学科学院病毒系、卫生部北京生研所和成都生研所及检定所等单位组织协作组，在北京生研所试制出我国第一批500万人份脊髓灰质炎减毒活疫苗，400多万名儿童服用，结果证明安全有效。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1978">
-                        <dt class="fnt_18">1978</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">我国预防接种工作进入计划免疫时期。解放后各所独立和合作研究取得的数十项科研成果获全国科学大会奖和国家科学技术进步奖，近百项成果获全国医药卫生科学大会奖。同年，北京生研所提出应用采浆术采集原料血浆得到卫生部同意，于1980年向全国推广。1982年后血液制品生产开始迅速发展。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1979">
-                        <dt class="fnt_18">1979</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190510/20190510181649_84781.png" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">世界卫生组织考察确证我国已于60年代初消灭天花。12月，北京生研所所长章以浩作为全球消灭天花证实委员会成员，在全球消灭天花证书上签字。次年5月，世界卫生组织第33届世界卫生大会宣布全球已消灭天花。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1982">
-                        <dt class="fnt_18">1982</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">第一次全国计划免疫工作会议召开，成立了卫生部医学科学委员会计划免疫专题委员会，建立各大区计划免疫协作委员会，秘书处分别设在六大生研所。委员会对推动计划免疫发展做出了贡献。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1988">
-                        <dt class="fnt_18">1988</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">我国的计划免疫工作获联合国儿童基金会（UNICEF）颁发的儿童生存银质奖章。北京生研所研制出我国第一支风疹疫苗。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1989">
-                        <dt class="fnt_18">1989</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">卫生部组建中国生物制品总公司，北京、长春、成都、兰州、上海、武汉生物制品研究所划归总公司领导。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507160828_59973.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">北京生研所率先从美国默克公司引进重组酵母乙肝疫苗工业化生产技术。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="1990">
-                        <dt class="fnt_18">1990</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507101125_70246.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">成都生研所与中国药品生物制品检定所联合研制的乙脑减毒活疫苗获得正式生产文号，为国际首创。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1997">
-                        <dt class="fnt_18">1997</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190510/20190510211509_59564.png" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">兰州生研所研制，我国自主研发的第一个用于临床的微生物毒素制品——注射用A型肉毒毒素衡力®取得正式生产文号并上市销售，是世界上第二个被批准用于临床治疗的肉毒毒素制剂，填补了国内空白。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="1998">
-                        <dt class="fnt_18">1998</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190429/20190429121522_61530.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">北京生研所发起组建北京天坛生物制品股份有限公司， 5月18日股票在上海证券交易所发行。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">北京生研所具有自主知识产权的人二倍体细胞风疹减毒活疫苗获生产批件。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="1999">
-                        <dt class="fnt_18">1999</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国生物制品总公司与卫生部脱钩。次年，划归中央企工委管理，所属北京、长春、武汉、成都、上海、兰州六个生研所的产权划归总公司所有。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2001">
-                        <dt class="fnt_18">2001</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507101615_96394.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">兰州生研所自主研发、国内独家生产的口服轮状病毒活疫苗取得生产文号并上市销售。该疫苗为世界上最早上市的两个轮状病毒疫苗之一。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2003">
-                        <dt class="fnt_18">2003</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国科学器材进出口总公司无偿划转到中国生物制品总公司。8月，中国生物制品总公司更名为中国生物技术集团公司。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507161116_97921.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">兰州生研所获b型流感嗜血杆菌多糖蛋白结合疫苗生产文号，填补了我国结合疫苗的空白。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2005">
-                        <dt class="fnt_18">2005</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">国家发改委同意北京生研所与天坛生物、病毒所共同组建新型疫苗国家工程研究中心，该项目被列入国家高新技术产业发展项目计划，是全国唯一的国家级新型疫苗研发和工程化、产业化的基地及服务平台。同年，中国医疗卫生器材进出口公司并入中生成为全资子公司。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2006">
-                        <dt class="fnt_18">2006</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507161309_22893.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">国家高新技术产业化示范工程项目无细胞百白破联合疫苗生产车间在武汉生研所黄金桥生产基地落成，为我国逐步实现用无细胞百白破疫苗取代传统全菌体百白破疫苗奠定了基础。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507162342_93045.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">成都生研所拥有自主知识产权的23价肺炎球菌多糖疫苗获得生产文号。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2009">
-                        <dt class="fnt_18">2009</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国医药集团总公司与中生集团重组。同年，为应对全球蔓延的甲型H1N1流感疫情，国家科技部紧急启动了联防联控应急科研项目，中国生物作为牵头单位组建流感疫苗技术创新联盟。9月，天坛生物、上海生研所和长春生研所先后获新药证书及药品注册批件，为防控流感大流行和应对全球疫情做出了重要贡献。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2010">
-                        <dt class="fnt_18">2010</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507100953_56725.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">国药集团决定重新组建中国生物技术集团公司。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507100753_14372.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">9月，全国开展适龄儿童麻疹疫苗强化免疫活动。10天里30个省的近1亿儿童接种麻疹疫苗，中国生物独家供应。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2011">
-                        <dt class="fnt_18">2011</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国生物技术集团公司更名为中国生物技术股份有限公司，所属各所改制更名。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505105253_77409.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">比尔及梅琳达•盖茨基金会与中生签署全球健康项目合作谅解备忘录。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507092505_27688.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">新疆和田地区发现输入性脊髓灰质炎野毒引起的局部传播疫情，中国生物在第一时间完成2225万粒脊灰疫苗的应急供应任务。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">武汉生研所获国家联合疫苗工程技术研究中心立项批准。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2013">
-                        <dt class="fnt_18">2013</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505104254_31364.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">成都公司生产的乙型脑炎减毒活疫苗通过世界卫生组织预认证。这是中国自主研发的疫苗首次通过预认证，进入联合国采购机构的药品采购清单。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2014">
-                        <dt class="fnt_18">2014</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507092658_30485.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">国药中生生物技术研究院有限公司成立。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd>            </dl><dl class="2017">
-                        <dt class="fnt_18">2017</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">北京公司口服二价脊髓灰质炎减毒活疫苗通过世界卫生组织预认证，获得联合国儿童基金会采购订单。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507102827_28952.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">天坛生物完成血液制品板块的重大资产重组，成为中国最大的血液制品企业。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507092852_35610.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">北京公司Sabin株脊髓灰质炎灭活疫苗（sIPV）上市。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190507/20190507101748_10582.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">武汉公司生产的国家一类新药肠道病毒EV71型灭活疫苗上市。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">中国生物与武汉中博生物股份有限公司实施重组，同年，武汉中博与扬州威克重组整合。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2018">
-                        <dt class="fnt_18">2018</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20190505/20190505105428_35016.jpg" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国生物与盖茨基金会签署《全球健康合作谅解备忘录》。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">武汉中博生物股份有限公司更名为国药集团动物保健股份有限公司，中国生物动物保健业务平台搭建完成。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd>            </dl><dl class="2019">
-                        <dt class="fnt_18">2019</dt>
-                        <dd>
-                            <div class="d_con">
-                                <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                                <div class="d_text wow fadeInUp">
-                                    <div class="p cf">
-                                        <h3 class="fnt_18">中国生物所属研究院和成都公司联合研制的国家一类新药“11价重组人乳头瘤病毒（HPV）疫苗”Ⅰ期临床试验启动。</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" style="display:none;"> <img class="ratio-img" data-ratio="0.5609" src="" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">中国生物研究院和中国生物兰州公司联合申报的一类新药——重组诺如病毒双价疫苗获得国家药品监督管理局临床试验许可。该品种在国内外均无上市产品，为国内第一个获批临床研究的同类疫苗。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20191202/1575271167_1080x530.jpg" alt="1575271167_1080x530.jpg" title="1575271167_1080x530.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">中国生物迎来百年华诞！100年的光辉岁月，凝聚在这个永恒的时刻。11月29日，第十九届中国生物制品年会暨庆祝中国生物百年华诞大会在京举行。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd><dd>
-                        <div class="d_con">
-                            <div class="span wow zoomIn" > <img class="ratio-img" data-ratio="0.5609" src="/upload/image/20200402/20200402165159_18360.jpg" onerror="lod(this)"> </div>
-                            <div class="d_text wow fadeInUp">
-                                <div class="p cf">
-                                    <h3 class="fnt_18">中国生物博物馆开馆，通过文物展出、沉浸式观影、互动体验、场景复原等方式，系统全面地呈现了中国生物制品事业的前世今生。</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </dd> </dl></div>
+                            </dd>
+                        </dl>
+                        {/tp:ad}
+                        
+                    </div>
                 </div>
             </div>
         </div>
