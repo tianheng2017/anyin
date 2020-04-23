@@ -1435,13 +1435,13 @@ a.more{ display: block; width: 44px; height: 44px; background: url(../images/dot
 
 .tab-b .ljx_but>div{width: 29px; height: 54px;position: absolute;top:50%;margin-top: -27px; z-index: 9;}
 
-.tab-b .ljx_but>div.swiper-button-prev{background: url(../upload/inter_pre.png) no-repeat center center;background-size: 100%;left: 0px;}
+.tab-b .ljx_but>div.swiper-button-prev{background: url(../images/inter_pre.png) no-repeat center center;background-size: 100%;left: 0px;}
 
-.tab-b .ljx_but>div.swiper-button-next{background: url(../upload/inter_next.png) no-repeat center center;background-size: 100%;right: 0px;}
+.tab-b .ljx_but>div.swiper-button-next{background: url(../images/inter_next.png) no-repeat center center;background-size: 100%;right: 0px;}
 
-.tab-b .ljx_but>div.swiper-button-prev.on{background: url(../upload/inter_pre_on.png) no-repeat center center;background-size: 100%;cursor: pointer;}
+.tab-b .ljx_but>div.swiper-button-prev.on{background: url(../images/inter_pre_on.png) no-repeat center center;background-size: 100%;cursor: pointer;}
 
-.tab-b .ljx_but>div.swiper-button-next.on{background: url(../upload/inter_next_on.png) no-repeat center center;background-size: 100%;cursor: pointer;}
+.tab-b .ljx_but>div.swiper-button-next.on{background: url(../images/inter_next_on.png) no-repeat center center;background-size: 100%;cursor: pointer;}
 
 
 

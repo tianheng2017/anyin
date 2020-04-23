@@ -28,47 +28,50 @@
     <div class="news-part1">
         <div class="inwrap">
             <h2 class="intit fnt_36 wow fadeInUp">
-                <a href="/index/trend.html">企业动态</a>
+                <a href="{:url('index/trend')}">企业动态</a>
             </h2>
             <div class="con fixed">
-                {tp:list name="list" order="create_time DESC" where="image <> ''"}
-                {if $key == 0}
                 <div class="ll-box ratio-img wow zoomIn" data-ratio="0.7770" data-wow-delay="0.2s">
+                    {tp:list name="list" order="create_time DESC" where="image <> ''"}
+                    {if $key == 0}
                     <div class="img ratio-img" data-ratio="0.5866">
                         <a href="{$list.url}" class="tran_scale" target="_blank">
                             <img src="{$list.image}" alt="1_1587354118.jpeg" title="1_1587354118.jpeg" onerror="lod(this)">
                             <span class="fnt_18">{$list.create_time|date="m-d"}</span>
                         </a>
                     </div>
+                    {/if}
+                    {/tp:list}
                     <div class="txt">
                         <h2 class="fnt_20 clamp">
                             <a href="{$list.url}" target="_blank">{$list.title}</a>
                         </h2>
                     </div>
                 </div>
-                {/if}
-                {/tp:list}
                 <div class="rr-box ratio-img" data-ratio="0.7770">
                     <ul class="fixed">
+                        {tp:list name="list" order="create_time DESC" where="image <> ''"}
+                        {if $key == 1 || $key==2 || $key==3}
                         <li class="wow fadeInUp" data-wow-delay="0.1s">
                             <div class="img">
-                                <a href="/content/details_12_5465.html" class="tran_scale" target="_blank">
-                                    <img src="/upload/image/20200420/1587371629_724x425.jpeg" alt="0_1587371221.jpeg" title="0_1587371221.jpeg" onerror="lod(this)">
+                                <a href="{$list.url}" class="tran_scale" target="_blank">
+                                    <img src="{$list.image}" alt="0_1587371221.jpeg" title="0_1587371221.jpeg" onerror="lod(this)">
                                 </a>
                             </div>
                             <div class="txt">
                                 <h2 class="fnt_18 clamp">
-                                    <a href="/content/details_12_5465.html" target="_blank">
-                                        中国生物召开2020年工作会暨一季度运营管理工作会              </a>
+                                    <a href="{$list.url}" target="_blank">{$list.title}</a>
                                 </h2>
-                                <span> 2020-04-17</span>
+                                <span>{$list.create_time|date="m-d"}</span>
                             </div>
                         </li>
+                        {/if}
+                        {/tp:list}
                     </ul>
                 </div>
             </div>
             <div class="nwes_m">
-                <a href="/news/trend.html">查看更多<img src="../images/dot21.png"></a>
+                <a href="{:url('index/trend')}">查看更多<img src="{$public}images/dot21.png"></a>
             </div>
         </div>
     </div>
