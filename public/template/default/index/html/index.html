@@ -25,6 +25,7 @@
     <div class="inbanner">
         <div class="swiper-container banner_index ratio-img" data-ratio="0.4921">
             <div class="swiper-wrapper">
+                
                 {tp:ad name='ad' id='1'}
                 <div class="swiper-slide {$ad.name==4 ? ' ban_video' : ''} ratio-img bg-cover" {$ad.name==4 ? ' data-video="{$public}video/4.mp4"' : ''} data-ratio="0.4921" style="background-image: url({$ad.image});">
                     <a href="{$ad.url}" target="_blank">
@@ -36,6 +37,7 @@
                     </a>
                 </div>
                 {/tp:ad}
+            
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -48,6 +50,7 @@
                     <a href="" target="_blank"> 产品服务</a>
                 </h2>
                 <ul class="fixed">
+                    
                     {tp:ad name='ad' id='2'}
                     <li class="wow zoomIn" data-wow-delay="0.2s">
                         <a href="{$ad.url}" target="_blank">
@@ -57,6 +60,7 @@
                         </a>
                     </li>
                     {/tp:ad}
+                    
                 </ul>
                 <div class="p1_search wow fadeInUp" data-wow-delay="1.4s">
                     <input type="text" name="" id="product_key" class="inp_ser fnt_18" placeholder="搜索更多产品">
@@ -85,6 +89,7 @@
                         <a href=""> 研发创新</a>
                     </h2>
                     <ul class="digitbox fixed">
+                        
                         {tp:ad name='ad' id='3'}
                         <li class="wow zoomIn">
                             <span class="fnt_72"><em id="in-count-1" rel="{$ad.name}">{$ad.name}</em>+</span>
@@ -95,6 +100,7 @@
                             </p>
                         </li>
                         {/tp:ad}
+                        
                     </ul>
                     <em class="btn_play wow fadeInUp" data-wow-delay="0.2s"></em>
                 </div>
@@ -105,6 +111,7 @@
         <div class="wrap_v">
             <div class="inner">
                 <ul class="digitbox fixed">
+                    
                     {tp:ad name='ad' id='3'}
                     <li class="wow zoomIn">
                         <span class="fnt_72"><em id="in-count-2" rel="{$ad.name}">{$ad.name}</em>+</span>
@@ -115,6 +122,7 @@
                         </p>
                     </li>
                     {/tp:ad}
+                    
                 </ul>
             </div>
         </div>
@@ -126,6 +134,7 @@
                 <a href="">质量管理</a>
             </h2>
             <ul class="fixed">
+                
                 {tp:ad name='ad' id='4'}
                 <li class="wow fadeInUp" data-wow-delay="0.3s">
                     <a href="{$ad.url}" class="tran_scale">
@@ -137,28 +146,36 @@
                     </a>
                 </li>
                 {/tp:ad}
+                
             </ul>
         </div>
     </div>
 
-<!--    <div class="index-part04">-->
-<!--        <div class="wrap">-->
-<!--            <h2 class="tit fnt_36 wow fadeInUp">-->
-<!--                <a href="">新闻中心</a>-->
-<!--            </h2>-->
-<!--            <ul class="fixed">-->
-<!--                <li class="wow zoomIn">-->
-<!--                    <a href="/content/details_13_5467.html" target="_blank">-->
-<!--                        <div class="img tran_scale ratio-img" data-ratio="0.58672"><span class="fnt_18"> 04-20</span><img src="/upload/image/20200420/1587372811_406x238.png" alt="0_1587372070.jpeg" title="0_1587372070.jpeg" onerror="lod(this)" ></div>-->
-<!--                        <div class="txt">-->
-<!--                            <h2 class="fnt_20 clamp">【人民日报】刊发中国生物署名文章：战疫展现央企责任担当</h2>-->
-<!--                            <div class="c clamp">3月20日，国药中国生物举办主题党课，党委书记朱京津以“承担国家责任，保障人民健康，在新冠肺炎阻击战中发挥央企主力军作用”为题作专题授课。党课内容在网络发布后，受到广泛关注。 4月20日，《人民日报》对中国生物党课部分内容进行了摘编，刊发《战疫展现央企责任担当》署名文章。</div>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="index-part04">
+        <div class="wrap">
+            <h2 class="tit fnt_36 wow fadeInUp">
+                <a href="">新闻中心</a>
+            </h2>
+            <ul class="fixed">
+                
+                {tp:list name="list" order="create_time DESC" pagesize="3"}
+                <li class="wow zoomIn">
+                    <a href="{$list.url}" target="_blank">
+                        <div class="img tran_scale ratio-img" data-ratio="0.58672">
+                            <span class="fnt_18">{$list.create_time|date="m-d"}</span>
+                            <img src="{$list.image}" alt="{:explode('/', $list.image)[3]}" title="{:explode('/', $list.image)[3]}" onerror="lod(this)" >
+                        </div>
+                        <div class="txt">
+                            <h2 class="fnt_20 clamp">{$list.title}</h2>
+                            <div class="c clamp">{$list.summary}</div>
+                        </div>
+                    </a>
+                </li>
+                {/tp:list}
+                
+            </ul>
+        </div>
+    </div>
 
 
  </body>
