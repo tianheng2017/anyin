@@ -8,7 +8,7 @@ $(document).ready(function() {
         pagination: '.banner_index .swiper-pagination',
         paginationClickable: true,
         onSlideChangeEnd: function(swiper) {
-            console.log(swiper.activeIndex);
+            //console.log(swiper.activeIndex);
             var _this = $('.banner_index .swiper-slide').eq(swiper.activeIndex);
             if(!swiperFlag) {
                 swiperFlag = true;
