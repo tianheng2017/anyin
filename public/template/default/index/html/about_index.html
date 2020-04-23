@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{$title}_{tp:cate id="$cate['topid']" type='cate_name' /}_{$system.name}</title>
+    <title>{$title}_{$system.name}</title>
     <meta name="keywords" content="{$keywords}" />
     <meta name="description" content="{$description}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
@@ -48,55 +48,20 @@
         </div>
     </div>
     <div class="section" id="section1">
-        <div class="intro" style="background-image: url({$public}images/about_bg_02.jpg);background-size: 100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src={$public}images/about_bg_02.jpg,sizingMethod='scale');">
+        <div class="intro" style="background-image: url({tp:debris name="about" type='image' /});background-size: 100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src={tp:debris name="about" type='image' /},sizingMethod='scale');">
             <div class="dowebok_bg dowebok_02" >
                 <div class="inwrap">
                     <div class="about_block02">
                         <div class="left">
-                            <h1 class="fnt_40 wow fadeInUp">中国生物技术股份有限公司<br >
-                                始于1919年</h1>
-                            <div class="about2_p"> <div class="edit_con_original"><p>
-                                前身为北洋政府中央防疫处，新中国成立后直属卫生部领导，现为世界500强中国医药集团有限公司的重要成员企业，是中国历史悠久、产品全、规模大，集科研、生产、销售以及研究生培养为一体的综合性生物制药企业。下辖11个二级子公司和69家二级以下子公司，员工10663人。
-                            </p>
-                                <br />
-                                <p>
-                                    中国生物拥有丰富的产品线，覆盖人用疫苗、血液制品、医学美容、动物保健、抗体药物、医学诊断六大生物制品领域。人用疫苗可年产50种，年产量超7亿剂次，居全球第六位，提供超过80%的国家免疫规划用疫苗；拥有年血浆采集量超过1500吨的上市公司，在产血液制品11种；作为国内唯一经政府认证批准的肉毒毒素生产商，医美产品得到市场高度认可；向社会提供动物疫苗及相关兽用生物制品的全方位、高质量服务；具备完整的抗体药物产业链条和特色鲜明的分子诊断大产业链。
-                                </p>
-                                <p>
-                                    <br />
-                                </p>
-                                <p>
-                                    中国生物具有雄厚的科技创新实力，拥有1000余人的研发团队和1100余人的质量管理团队，包括1名中国工程院院士、1名国家“863”计划疫苗项目首席科学家、13名国家药典委员会委员。拥有5个博士后工作站、1个博士学位授予点、5个硕士学位授予点，为中国生物制药行业的发展输送了大批高端人才。
-                                </p>
-                                <p>
-                                    <br />
-                                </p>
-                                <p>
-                                    中国生物秉承“关爱生命、呵护健康”的理念，在国家重大传染病和流行病应急防控以及重大抢险救灾中发挥了不可替代的专业支撑和稳定社会的作用。“十三五”以来，中国生物继续发挥行业领军作用，正在成为引领国内行业发展、具有国际竞争力、受社会尊重的创新型生物医药企业。
-                                </p></div> </div>
+                            <h1 class="fnt_40 wow fadeInUp">{$system.name}<br >
+                                始于2009年</h1>
+                            <div class="about2_p">
+                                <div class="edit_con_original">{tp:debris name="about" type='content' /}</div>
+                            </div>
                             <div class="bot_link wow fadeInUp"> <a href="/about/investor.html"> 投资者关系</a> <a href="/about/subsidiary.html"> 下属子公司</a> </div>
                         </div>
                         <div class="right wow fadeInRight">
-                            <ul>
-                                <li>
-                                    <dl>
-                                        <dt>11</dt>
-                                        <dd>二级子公司</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>69</dt>
-                                        <dd>二级以下子公司</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>80%</dt>
-                                        <dd>提供国家免疫规划用疫苗超过80%</dd>
-                                    </dl>
-                                </li>
-                            </ul>
+                            {tp:debris name="subsidiary" type='content' /}
                         </div>
                     </div>
                 </div>
