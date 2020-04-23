@@ -112,7 +112,7 @@ function Nbtn_state0(Odom){
 
 function bank_1() {
     var numlength=$(".bx_shiC li").length-5;
-    console.log(numlength)
+    //console.log(numlength)
     $(".bx_shiC").each(function (index, element) {
         var obj = $(this)
         var num = 5;
