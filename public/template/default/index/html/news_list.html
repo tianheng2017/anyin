@@ -90,14 +90,14 @@
                 <h2 class="fnt_36 wow fadeInUp"><a href="{:url('index/media')}">媒体焦点</a></h2>
                 <ul class="fixed a-list wow zoomIn" data-wow-delay="0.2s">
                     
-                    {tp:list2 name="list" order="create_time DESC"}
-                    {if $list2.id == 24}
+                    {tp:list name="list" order="create_time DESC"}
+                    {if $list.id == 24}
                     <li>
-                        <a href="{$list2.url}" class="ellipsis" target="_blank">{$list2.title}</a>
-                        <span>{$list2.create_time|date="Y-m-d"}</span>
+                        <a href="{$list.url}" class="ellipsis" target="_blank">{$list.title}</a>
+                        <span>{$list.create_time|date="Y-m-d"}</span>
                     </li>
                     {/if}
-                    {/tp:list2}
+                    {/tp:list}
                     
                     </ul>
                 <a href="{:url('index/media')}" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
@@ -105,14 +105,14 @@
             <div class="rr-box">
                 <h2 class="fnt_36 wow fadeInUp"><a href="{:url('index/subject')}">专题专栏</a></h2>
                 <ul class="fixed a-list wow zoomIn" data-wow-delay="0.2s">
-                    {tp:list3 name="list" order="create_time DESC"}
-                    {if $list3.id == 26}
+                    {tp:list name="list" order="create_time DESC"}
+                    {if $list.id == 26}
                     <li>
-                        <a href="{$list3.url}" class="ellipsis" target="_blank">{$list3.title}</a>
-                        <span>{$list3.create_time|date="Y-m-d"}</span>
+                        <a href="{$list.url}" class="ellipsis" target="_blank">{$list.title}</a>
+                        <span>{$list.create_time|date="Y-m-d"}</span>
                     </li>
                     {/if}
-                    {/tp:list3}
+                    {/tp:list}
                 </ul>
                 <a href="{:url('index/subject')}" class="more wow fadeInUp" data-wow-delay="0.3s"></a>
             </div>
