@@ -24,31 +24,30 @@
 <div class="business-part">
     <div class="inwrap">
         <ul class="fixed">
-            {tp:nav name='nav' id='27'}
-            {$nav.name}
-<!--                {volist name="$nav.sub" id="v"}-->
-<!--                <li>-->
-<!--                    <div class="img ratio-img wow zoomIn" data-ratio="0.5625">-->
-<!--                        <a href="{$v.url}">-->
-<!--                            <img src="{$v.image}" onerror="lod(this)">-->
-<!--                            <span></span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="txt ratio-img" data-ratio="0.5625">-->
-<!--                        <div class="inner">-->
-<!--                            <a href="{$v.url}">-->
-<!--                                <div class="tit wow fadeInUp">-->
-<!--                                    <div class="ico"><img src="{$v.ico_image}"></div>-->
-<!--                                    <h2 class="fnt_24">{$v.cate_name}</h2>-->
-<!--                                    <h3 class="fnt_20">{$v.en_name}</h3>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                            <div class="con wow fadeInUp">{$v.summary}</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                {/volist}-->
+            
+            {tp:nav name='nav' id='27' menu='0'}
+            <li>
+                <div class="img ratio-img wow zoomIn" data-ratio="0.5625">
+                    <a href="{$nav.url}">
+                        <img src="{$nav.image}" onerror="lod(this)">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="txt ratio-img" data-ratio="0.5625">
+                    <div class="inner">
+                        <a href="{$nav.url}">
+                            <div class="tit wow fadeInUp">
+                                <div class="ico"><img src="{$nav.ico_image}"></div>
+                                <h2 class="fnt_24">{$nav.cate_name}</h2>
+                                <h3 class="fnt_20">{$nav.en_name}</h3>
+                            </div>
+                        </a>
+                        <div class="con wow fadeInUp">{$nav.summary}</div>
+                    </div>
+                </div>
+            </li>
             {/tp:nav}
+            
         </ul>
     </div>
 </div>
