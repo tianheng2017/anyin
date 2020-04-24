@@ -12,6 +12,7 @@
 	{include file="common/css"/}
 	
 	<link rel="stylesheet" href="{$public}css/style.css">
+	<link rel="stylesheet" href="{$public}css/x_style.css">
 
 </head>
 <body>
@@ -21,6 +22,42 @@
 
 {include file="common/header"/}
 
+<div class="main inmain">
+	<div class="banner bg-cover" style="background-image: url({$cate.image});">
+		<img src="{$cate.image}">
+		<div class="inwrap a-m-c">
+			<h2 class="v-m-c">
+				<span class="fnt_60">研发创新</span>
+			</h2>
+		</div>
+	</div>
+	<div class="innovate">
+	<div class="innovate1 inwrap">
+		<div class="innovate_tit">
+			<h1 class="fnt_36"> 科技方针和研发体系</h1>
+			<p class="fnt_18"></p>
+		</div>
+		<div class="innovate1_wrap">
+			<ul>
+				<li class="ratio-img" data-ratio="1.4625">
+					<img class="wow zoomIn" src="/upload/innovation1_img01.jpg" onerror="lod(this)" />
+					<i></i>
+					<div class="innovate1_con">
+						<h2 class="fnt_24">发展理念</h2>
+						<p class="fnt_18">创新<br >
+							协调<br >
+							绿色<br >
+							开放<br >
+							共享<br >
+						</p>
+					</div>
+					<div class="innovate1_tit fnt_24 wow fadeInUp">发展理念</div>
+				</li>
+				<li class="clear"></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 {include file="common/footer"/}
 {include file="common/js"/}
