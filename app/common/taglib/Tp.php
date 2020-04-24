@@ -80,6 +80,7 @@ class Tp extends TagLib {
         $tag['id']    = $tag['id']    ?? '';
         $name         = $tag['name']  ?? 'nav';
         $menu         = $tag['menu']  ?? 1;
+        halt($tag['id']);
         if (!empty($tag['id'])) {
             $cateStr = '$__CATE__ = \app\common\model\Cate::where(\'is_menu\',' . $menu . ')->order(\'sort ASC,id DESC\')->select();';
             $cateStr .= '$__LIST__ = getChildsOn($__CATE__,' . $tag['id'] . ');';
