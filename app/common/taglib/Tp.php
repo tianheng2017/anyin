@@ -79,19 +79,19 @@ class Tp extends TagLib {
         $tag['limit'] = $tag['limit'] ?? '0';
         $tag['id']    = $tag['id']    ?? '';
         $name         = $tag['name']  ?? 'nav';
-        $menu         = $tag['menu']  ?? 1;
-        halt($tag['id']);
         if (!empty($tag['id'])) {
-            $cateStr = '$__CATE__ = \app\common\model\Cate::where(\'is_menu\',' . $menu . ')->order(\'sort ASC,id DESC\')->select();';
+            $cateStr = '$__CATE__ = \app\common\model\Cate::where(\'is_menu\',1)->order(\'sort ASC,id DESC\')->select();';
             $cateStr .= '$__LIST__ = getChildsOn($__CATE__,' . $tag['id'] . ');';
         } else {
-            $cateStr  = '$__CATE__ = \app\common\model\Cate::where(\'is_menu\',' . $menu . ')->order(\'sort ASC,id DESC\')->select();';
+            $cateStr  = '$__CATE__ = \app\common\model\Cate::where(\'is_menu\',1)->order(\'sort ASC,id DESC\')->select();';
             $cateStr .= '$__LIST__ = unlimitedForLayer($__CATE__);';
         }
+
         // 提取前N条数据,因为sql的LIMIT避免不了子栏目的问题
         if (!empty($tag['limit'])) {
             $cateStr .= '$__LIST__ = array_slice($__LIST__, 0,' . $tag['limit'] . ');';
         }
+
         $parse  = '<?php ';
         $parse .= $cateStr;
         $parse .= ' ?>';
