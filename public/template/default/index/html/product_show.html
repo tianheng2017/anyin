@@ -47,7 +47,7 @@
                 <div class="product_detail_r">
                     <div class="product_detail_rs">
                         <h2 class="fnt_24">{$info.title}</h2>
-                        {$info.description}
+                        {$info.content|raw}
                         {if $info.download}
                         <span>
                             <a href="{$info.download}" target="_blank">
