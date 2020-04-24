@@ -34,21 +34,18 @@
 		</div>
 		<div class="innovate1_wrap">
 			<ul>
+				{tp:ad name='ad' id='2'}
 				<li class="ratio-img" data-ratio="1.4625">
-					<img class="wow zoomIn" src="/upload/innovation1_img01.jpg" onerror="lod(this)" />
+					<img class="wow zoomIn" src="{$ad.image}" onerror="lod(this)" />
 					<i></i>
 					<div class="innovate1_con">
-						<h2 class="fnt_24">发展理念</h2>
-						<p class="fnt_18">创新<br >
-							协调<br >
-							绿色<br >
-							开放<br >
-							共享<br >
-						</p>
+						<h2 class="fnt_24">{$ad.name}</h2>
+						<p class="fnt_18">{$ad.description|raw|textareaBr}</p>
 					</div>
-					<div class="innovate1_tit fnt_24 wow fadeInUp">发展理念</div>
+					<div class="innovate1_tit fnt_24 wow fadeInUp">{$ad.name}</div>
 				</li>
 				<li class="clear"></li>
+				{/tp:ad}
 			</ul>
 		</div>
 	</div>
