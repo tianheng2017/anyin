@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>{$title}_{$system.name}</title>
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" type="image/x-icon" href="{$public}img/favicon.ico" />
+    
+    {include file="common/css"/}
+    
+    <link rel="stylesheet" href="{$public}css/style.css">
+    <link rel="stylesheet" type="text/css" href="{$public}css/history_css.css" />
+    
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+{include file="common/header"/}
+
+<div class="business-part">
+    <div class="inwrap">
+        <ul class="fixed">
+            {tp:nav name='nav' id='27'}
+                {if $nav.sub}
+                    {volist name="$nav.sub" id="v"}
+                    <li>
+                        <div class="img ratio-img wow zoomIn" data-ratio="0.5625">
+                            <a href="{$v.url}">
+                                <img src="{$v.image}" onerror="lod(this)">
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="txt ratio-img" data-ratio="0.5625">
+                            <div class="inner">
+                                <a href="{$v.url}">
+                                    <div class="tit wow fadeInUp">
+                                        <div class="ico"><img src="{$v.ico_image}"></div>
+                                        <h2 class="fnt_24">{$v.cate_name}</h2>
+                                        <h3 class="fnt_20">{$v.en_name}</h3>
+                                    </div>
+                                </a>
+                                <div class="con wow fadeInUp">{$v.summary}</div>
+                            </div>
+                        </div>
+                    </li>
+                    {/volist}
+                {/if}
+            {/tp:nav}
+        </ul>
+    </div>
+</div>
+
+{include file="common/footer"/}
+{include file="common/js"/}
+
+<script src="{$public}js/swfobject.js"></script>
+<script src="{$public}js/jquery.infinitescroll.js"></script>
+<script src="{$public}js/jquery.masonry.js"></script>
+<script src="{$public}js/history.js"></script>
+<script src="{$public}js/history_02.js"></script>
+<script src="{$public}js/about_video.js"></script>
+
+</body>
+</html>
