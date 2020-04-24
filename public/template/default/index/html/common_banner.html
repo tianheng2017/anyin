@@ -16,15 +16,5 @@
     </div>
 </div>
 {/if}
-<div class="site">
-    <div class="inwrap">
-        <a href='/'  class="home"  title="首页">首页</a>  &gt;
-        {tp:position name='v'}
-            {if $v.id == $cate.id}
-                <span>{$v.cate_name}</span>
-            {else /}
-                <a  href='{$v.url}' title={$v.cate_name}>{$v.cate_name}</a>  &gt;
-            {/if}
-        {/tp:position}
-    </div>
-</div>
+
+{include file="common/position"/}
