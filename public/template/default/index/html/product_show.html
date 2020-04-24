@@ -40,34 +40,21 @@
                 <div class="product_detail_l">
                     <div class="product_detail_ls">
                         <div class="product_detail_l_pic ratio-img tran_scale" data-ratio="0.7488">
-                            <img src="/upload/image/20190429/1556502961_1711x1280.jpg" />
+                            <img src="{$info.image}" />
                         </div>
                     </div>
                 </div>
                 <div class="product_detail_r">
                     <div class="product_detail_rs">
-                        <h2 class="fnt_24">静注人免疫球蛋白（pH4）5克</h2>
-                        <dl >
-                            <dt class="fnt_18">产品商品名</dt>
-                            <dd>蓉生静丙，其它血制公司产品无商品名</dd>
-                        </dl>
-                        <dl >
-                            <dt class="fnt_18">产品作用与用途</dt>
-                            <dd>川崎病；格林巴利综合征；重症肌无力；血小板减少性紫癜；新生儿败血症等<br >
-                            </dd>
-                        </dl>
-                        <dl >
-                            <dt class="fnt_18">生产厂家</dt>
-                            <dd>成都蓉生药业有限责任公司</dd>
-                        </dl>
-                        <dl style="display:none;">
-                            <dt class="fnt_18">研发时间、上市时间</dt>
-                            <dd></dd>
-                        </dl>
-                        <dl style="display:none;">
-                            <dt class="fnt_18">产品优势</dt>
-                            <dd></dd>							</dl>
-                        <span ><a href="/upload/file/20190429/20190429095623_70978.pdf" target="_blank"><img src="/images/product_xiazai.png"/>产品说明书</a></span>
+                        <h2 class="fnt_24">{$info.title}</h2>
+                        {$info.description}
+                        {if $info.download}
+                        <span>
+                            <a href="{$info.download}" target="_blank">
+                                <img src="{$public}images/product_xiazai.png"/>产品说明书
+                            </a>
+                        </span>
+                        {/if}
                     </div>
                 </div>
             </div>
